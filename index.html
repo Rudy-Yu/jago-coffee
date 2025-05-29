@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jago Coffee - Coffee on the Go!</title>
+    <meta name="description" content="Jago Coffee adalah mobile coffee company yang menyajikan kopi segar berkualitas langsung ke lokasi Anda.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/images/jago_logo.jpeg" alt="Jago Coffee Logo" class="logo">
+            </a>
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="#about">ABOUT US</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#how-it-works">HOW IT WORKS</a>
+                    <a href="#contact-form">CONTACT</a>
+                    <a href="#" class="btn btn-primary">ORDER NOW</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#about">ABOUT US</a>
+            <a href="#menu">MENU</a>
+            <a href="#how-it-works">HOW IT WORKS</a>
+            <a href="#contact-form">CONTACT</a>
+            <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Coffee on the Go!</h1>
+                <p class="hero-subtitle">Your neighborhood cafe that comes to you, wherever you are, whenever you want it.</p>
+                <a href="#how-it-works" class="btn btn-secondary hero-btn">GET YOURS NOW</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 15.5a.5.5 0 01-.354-.146l-4-4a.5.5 0 01.708-.708L12 14.293l3.646-3.647a.5.5 0 01.708.708l-4 4A.5.5 0 0112 15.5z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>THE JAGO STORY</h2>
+                <p class="mb-4">Making great coffee accessible and affordable, one neighborhood at a time.</p>
+            </div>
+            <div class="about-grid animate-on-scroll">
+                <div class="about-image">
+                    <img src="assets/images/jago_team.png" alt="Jago Coffee Team">
+                </div>
+                <div class="about-content">
+                    <p>Nothing is more Indonesian than a great cup of coffee. This archipelago produces some of the best coffees that you can find in the world. However, most Indonesians don't get to experience that great product for themselves.</p>
+                    
+                    <p>That is why we started Jago. We aim to make great coffee, sourced in Indonesia, accessible to anyone. Opening up cafes requires a lot of money and requires significant time to launch, so instead we created an EV (Electric Vehicle) cafe that was mobile: a cafe-on-wheels.</p>
+                    
+                    <p>A cafe that can come to you, wherever you are, whenever you want it to. A cup of a coffee prepared fresh on the spot so you can really taste all that Indonesian coffee has to offer.</p>
+                    
+                    <a href="#" class="btn btn-primary mt-4">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="values">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">☕</div>
+                    <h3 class="value-title">QUALITY DOESN'T HAVE TO BE EXPENSIVE</h3>
+                    <p class="value-description">Starting from IDR 8K, you can taste 100% Arabica coffee beans that are traded directly from Indonesian farmers and are roasted with our own recipes.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">🚀</div>
+                    <h3 class="value-title">FAST AND ACCESSIBLE</h3>
+                    <p class="value-description">Order now via Jago App and you'll get a cup-in-hand right away or schedule ahead if that's more convenient. Never a minimum order, never a delivery fee.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">👨‍🍳</div>
+                    <h3 class="value-title">YOUR JAGOANS</h3>
+                    <p class="value-description">Jagoans are fully trained baristas and the operators of the cart. They're always ready to serve you a fresh cup and provide great hospitality as if you walked into a cafe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>LIFE IS FULL OF FLAVOR</h2>
+                <p>With 12+ flavors and counting, we've got one for every occasion.</p>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu items will be dynamically inserted by JavaScript -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="btn btn-secondary">VIEW FULL MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>TRY JAGO IN 3 STEPS</h2>
+                <p>It's as easy as 1-2-3 to get your favorite coffee delivered.</p>
+            </div>
+            <div class="steps">
+                <div class="step-line"></div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Choose your location</h3>
+                    <p class="step-description">Our Jagoans will come to you based on your chosen location</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Select from coffees or teas</h3>
+                    <p class="step-description">Choose your go-to drinks that start at only IDR 8K</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Easily pay and wait</h3>
+                    <p class="step-description">Pay with GoPay or OVO and your Jagoan will be there within 15 minutes</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="btn btn-primary">DOWNLOAD APP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="testimonial-grid">
+                <!-- Testimonials will be dynamically inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-20 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>GET IN TOUCH</h2>
+                <p>Have questions or want to book Jago Coffee for your event? Send us a message!</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/your-formspree-id" method="POST" class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="form-textarea"></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" id="contact-submit">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="text-center">
+                <h2>LET'S GET CLOSER TO BANG JAGO!</h2>
+                <p>Receive the newest information & other fun stuff by subscribing our newsletter</p>
+                
+                <div class="newsletter-form-container">
+                    <form action="https://formspree.io/f/your-formspree-id" method="POST" class="cta-form" id="newsletter-form">
+                        <input type="email" name="email" id="newsletter-email" placeholder="Your email address" class="cta-input" required>
+                        <button type="submit" class="btn btn-secondary" id="newsletter-submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="assets/images/jago_logo.jpeg" alt="Jago Coffee Logo">
+                    </div>
+                    <p class="footer-description">Making great coffee accessible and affordable, one neighborhood at a time.</p>
+                </div>
+                
+                <div class="footer-links-container">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact-form">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact-container">
+                    <h3 class="footer-heading">Contact</h3>
+                    <div class="footer-contact">
+                        <p>Jakarta, Indonesia</p>
+                        <p>info@jagocoffee.com</p>
+                        <p>+62 812 3456 7890</p>
+                    </div>
+                </div>
+                
+                <div class="footer-social-container">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/6281234567890" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Jago Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
